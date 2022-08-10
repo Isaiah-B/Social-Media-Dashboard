@@ -13,7 +13,7 @@ Users of this page should be able to:
 
 ### Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/responsive-social-media-dashboard-gEYydxpMhC)
 - [Live Site](https://stalwart-gelato-79f0f5.netlify.app)
 
 ### Built with
