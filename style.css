@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  position: relative;
+  background-color: var(--background);
+}
+
+.theme-dark {
+  --background: hsl(230, 17%, 14%);
+  --background-pattern: hsl(232, 19%, 15%);
+  --card-background: hsl(228, 28%, 20%);
+  --card-hover: hsl(228, 24%, 27%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary:hsl(228, 34%, 66%);
+  --toggle: hsl(228, 34%, 66%);
+  --toggle-circle: hsl(228, 28%, 20%);
+  --toggle-left: hsl(210, 78%, 56%);
+  --toggle-right: hsl(146, 68%, 55%);
+}
+
+.theme-light {
+  --background: hsl(0, 0%, 100%);
+  --background-pattern: hsl(225, 100%, 98%);
+  --card-background: hsl(227, 47%, 96%);
+  --card-hover: hsl(227, 49%, 91%);
+  --text-primary: hsl(230, 17%, 14%);
+  --text-secondary:hsl(228, 12%, 44%);
+  --toggle: hsl(230, 22%, 74%);
+  --toggle-circle: hsl(225, 100%, 98%);
+  --toggle-left: hsl(210, 78%, 56%);
+  --toggle-right: hsl(146, 68%, 55%);
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 4rem;
+  width: 111rem;
+}
+
+.card {
+  border-radius: 5px;
+  width: 25.5rem;
+  background-color: var(--card-background);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: var(--card-hover);
+}
+
+.stat-change {
+  display: flex;
+  justify-content: center;
+}
+
+.stat {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stat-positive {
+  color: hsl(163, 72%, 41%);
+}
+
+.stat-negative {
+  color: hsl(356, 69%, 56%);
+}
+
+/*************************************/
+/* HEADER */
+/*************************************/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+  height: 24.4rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--background-pattern);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+.title-sub {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.toggle-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--toggle);
+}
+
+.toggle-bar {
+  position: relative;
+  width: 4.6rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--toggle-circle);
+
+  transition: all 0.3s ease-out;
+}
+
+.toggle-bar:hover .toggle-circle {
+  background-color: var(--card-hover);
+}
+
+.theme-dark .toggle-bar {
+  background-image: linear-gradient(to right, var(--toggle-left), var(--toggle-right));
+}
+
+.theme-light .toggle-bar{
+  background-color: var(--toggle);
+}
+
+.theme-light .toggle-bar:hover {
+  background-image: linear-gradient(to right, var(--toggle-left), var(--toggle-right));
+}
+
+.theme-dark .toggle-circle {
+  transform: translate(16%, -50%);
+}
+
+.theme-light .toggle-circle {
+  transform: translate(138%, -50%);
+}
+
+/*************************************/
+/* CARDS TOP */
+/*************************************/
+.cards-top {
+  display: grid;
+  grid-template-columns: repeat(4, fit-content(100%));
+  justify-content: space-between;
+  padding: 4.6rem 0;
+}
+
+.card-big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+  padding: 3.3rem 5.8rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-big-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-tag {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.card-big-number {
+  display: block;
+  font-size: 5.8rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+
+.card-big-sub {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.8rem;
+  color: var(--text-secondary);
+}
+
+.stat-change {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.stat-change img {
+  width: 0.8rem;
+  height: 0.4rem;
+}
+
+.card-big::before {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+
+.card--facebook::before {
+  background-color: hsl(208, 92%, 53%);
+}
+.card--twitter::before {
+  background-color: hsl(203, 89%, 53%);
+}
+.card--instagram::before {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.card--youtube::before {
+  background-color: hsl(348, 97%, 39%);
+}
+
+/*************************************/
+/* CARDS OVERVIEW */
+/*************************************/
+
+.overview-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2.6rem;
+  color: var(--text-primary);
+}
+
+.overview-cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, fit-content(100%));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2.4rem;
+}
+
+.card-small {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2.6rem 3rem;
+}
+
+.card-small-top,
+.card-small-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-small-top {
+  align-items: center;
+}
+
+.card-small-bottom {
+  align-items: flex-end;
+}
+
+.card-small-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.card-small-number {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/*****************************/
+/* ATTRIBUTION */
+/*****************************/
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  font-size: 11px;
+  width: 100%;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

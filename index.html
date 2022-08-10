@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+  <div class="container">
+    <div class="bg-pattern"></div>
+    <header class="header">
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <p class="title-sub">Total Followers: 23,004</p>
+      </div>
+      <div class="toggle">
+        <span class="toggle-text">Dark Mode</span>
+        <button class="toggle-bar" aria-label="Toggle theme">
+          <div class="toggle-circle"></div>
+        </button>
+      </div>
+    </header>
+    
+    <main>
+      <section class="cards-top">
+        <div class="card card-big card--facebook">
+          <div class="card-big-header">
+            <img src="images/icon-facebook.svg" alt="Facebook logo">
+            <p class="social-tag">@nathanf</p>
+          </div>
+          <div class="card-big-metric">
+            <span class="card-big-number">1987</span>
+            <span class="card-big-sub">Followers</span>
+            <div class="stat-change">
+              <img src="images/icon-up.svg" alt="Up arrow">
+              <p class="stat stat-positive">12 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-big card--twitter">
+          <div class="card-big-header">
+            <img src="images/icon-twitter.svg" alt="Twitter logo">
+            <p class="social-tag">@nathanf</p>
+          </div>
+          <div class="card-big-metric">
+            <span class="card-big-number">1044</span>
+            <span class="card-big-sub">Followers</span>
+            <div class="stat-change">
+              <img src="images/icon-up.svg" alt="Up arrow">
+              <p class="stat stat-positive">99 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-big card--instagram">
+          <div class="card-big-header">
+            <img src="images/icon-instagram.svg" alt="Instagram logo">
+            <p class="social-tag">@realnathanf</p>
+          </div>
+          <div class="card-big-metric">
+            <span class="card-big-number">11k</span>
+            <span class="card-big-sub">Followers</span>
+            <div class="stat-change">
+              <img src="images/icon-up.svg" alt="Up arrow">
+              <p class="stat stat-positive">1099 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-big card--youtube">
+          <div class="card-big-header">
+            <img src="images/icon-youtube.svg" alt="Youtube logo">
+            <p class="social-tag">@Nathan F.</p>
+          </div>
+          <div class="card-big-metric">
+            <span class="card-big-number">8239</span>
+            <span class="card-big-sub">Followers</span>
+            <div class="stat-change">
+              <img src="images/icon-down.svg" alt="Down arrow">
+              <p class="stat stat-negative">144 Today</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-section">
+        <h2 class="overview-heading">Overview - Today</h2>
+        <div class="overview-cards">
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Page Views</p>
+              <img src="images/icon-facebook.svg" alt="Facebook logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">87</span>
+              <div class="stat-change">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                <span class="stat stat-positive">3%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Likes</p>
+              <img src="images/icon-facebook.svg" alt="Facebook logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">52</span>
+              <div class="stat-change">
+                <img src="images/icon-down.svg" alt="Up arrow">
+                <span class="stat stat-negative">2%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Likes</p>
+              <img src="images/icon-instagram.svg" alt="Instagram logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">5462</span>
+              <div class="stat-change">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                <span class="stat stat-positive">2257%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="Instagram logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">52k</span>
+              <div class="stat-change">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                <span class="stat stat-positive">1375%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Retweets</p>
+              <img src="images/icon-twitter.svg" alt="Twitter logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">117</span>
+              <div class="stat-change">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                <span class="stat stat-positive">303%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Likes</p>
+              <img src="images/icon-twitter.svg" alt="Twitter logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">507</span>
+              <div class="stat-change">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                <span class="stat stat-positive">553%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Likes</p>
+              <img src="images/icon-youtube.svg" alt="Youtube logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">107</span>
+              <div class="stat-change">
+                <img src="images/icon-down.svg" alt="Up arrow">
+                <span class="stat stat-negative">19%</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card card-small">
+            <div class="card-small-top">
+              <p class="card-small-heading">Total Views</p>
+              <img src="images/icon-youtube.svg" alt="Youtube logo">
+            </div>
+            <div class="card-small-bottom">
+              <span class="card-small-number">1407</span>
+              <div class="stat-change">
+                <img src="images/icon-down.svg" alt="Up arrow">
+                <span class="stat stat-negative">12%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div className="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/Isaiah-B">Isaiah</a>.
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  const toggleBtn = document.querySelector('.toggle-bar');
+  
+  const setTheme = (theme) => {
+    localStorage.setItem('dashboard-theme', theme);
+    document.documentElement.className = theme;
+  }
+  
+  const toggleTheme = () => {
+    if (localStorage.getItem('dashboard-theme') === 'theme-dark') {
+      setTheme('theme-light')
+    } else {
+      setTheme('theme-dark')
+    }
+  }
+
+  if (localStorage.getItem('dashboard-theme') === 'theme-light') {
+    setTheme('theme-light');
+  } else {
+    setTheme('theme-dark');
+  }
+  
+  toggleBtn.addEventListener('click', toggleTheme);
+</script>
+</html>
