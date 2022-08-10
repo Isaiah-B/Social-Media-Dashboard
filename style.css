@@ -170,11 +170,11 @@ h1 {
 }
 
 .theme-dark .toggle-circle {
-  transform: translate(16%, -50%);
+  transform: translate(-112%, -50%);
 }
 
 .theme-light .toggle-circle {
-  transform: translate(138%, -50%);
+  transform: translate(12%, -50%);
 }
 
 /*************************************/
