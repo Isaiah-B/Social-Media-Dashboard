@@ -203,6 +203,10 @@ h1 {
   gap: 1rem;
 }
 
+.card-big-metric {
+  text-align: center;
+}
+
 .social-tag {
   font-size: 1.2rem;
   font-weight: 700;
